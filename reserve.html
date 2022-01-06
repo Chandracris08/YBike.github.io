@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <head>
+        <title>YBIKE</title>
+        <link rel="icon" href="/main/assets/logo/logo.png">
+        <link rel="stylesheet"href="style.css">
+        <script src="Script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="YBIKE, Vixian, Kawasako, Motorcycle">
+        <meta name="description" content="This document explains about the company YBIKE and their business in selling motorcycles from the 2 famous brands : Vixian and Kawasako">
+    </head>
+    <body>
+      <header>
+        <div class="navbar">
+          <div class="logo">
+              <img src="/main/assets/logo/logo3.png">
+          </div>
+          <div class="navbar2">
+            <div class = "judul">
+             <p>YBike</p>
+            </div>
+            <div class="buttons">
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                <button class="dropbtn">Products
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="vixian.html">Vixian</a>
+                  <a href="kawasako.html">Kawasako</a>
+                </div>
+              </div>
+              <a href="gallery.html">Gallery</a>
+              <a href="#">Reserve</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <form action="" method="post" id="form">
+          <div class="titlereserve"> 
+            <h1>Reservation</h1>
+          </div>
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text" name="name" id="name"
+                    class="form-control"
+                >
+            </div>
+            <div class="form-group">
+                <label for="">Phone</label>
+                <input type="text" name="phone" id="phone"
+                    class="form-control">
+                  <hr>
+            </div>
+            <div class="form-group">
+                <label for="">Address</label>
+                <input type="text" name="address" id="address" 
+                    class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Product Type</label>
+                <select name="producttype" id="producttype" class="form-control">
+                    <option value="">-- Product Type --</option>
+                    <option value="vixian">Vixian 150CC</option>
+                    <option value="kawasakoninja250r">Kawasako Ninja 250R</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label for="">Color</label>
+              <select name="colortype" id="colortype" class="form-control">
+                  <option value="">-- Choose Color --</option>
+                  <option value="red">Red</option>
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="green">Green</option>
+              </select>
+          </div>
+            <div class="form-group">
+                <label for="">Quantity</label>
+                <input type="text" name="quantity" id="quantity" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement">I agree with the terms and conditions</label>
+            </div>
+            <div class="form-group">
+                <label for="" id="error"></label>
+            </div>
+                <button type="submit" class="btnsubmit">Submit</button>
+        </form>
+    </div>
+      
+        <footer>
+          <h2>©Copyright YBIKE. All rights reserved 2020</h2>
+          <img src="/main/assets/images/socmed/socmedlogo.png" alt="">
+        </footer>
+        <script src="validate.js"></script>
+    </body>
+</html>
